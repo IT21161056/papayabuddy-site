@@ -13,6 +13,7 @@ import Downloads from './components/Downloads';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Technologies from './components/Technologies';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <LiteratureSurvey />
         <ResearchGap />
         <Solution />
+        <Technologies />
         <Objectives />
         <Methodology />
         <Achievements />

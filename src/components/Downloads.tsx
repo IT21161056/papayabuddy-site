@@ -5,36 +5,36 @@ import SectionTitle from './common/SectionTitle';
 const Downloads: React.FC = () => {
   const resources = [
     {
-      title: "Research Paper",
-      description: "Complete academic paper with methodology, results and analysis",
+      title: "Final Report",
+      description: "Comprehensive guide to identifying and treating common papaya diseases",
       icon: <FileText className="h-10 w-10 text-green-600" />,
       fileType: "PDF",
-      fileSize: "2.4 MB",
-      link: "#"
+      fileSize: "4.2 MB",
+      link: "/downloads/Final Report.pdf"
     },
     {
-      title: "Presentation Slides",
-      description: "Project presentation with key findings and visual aids",
-      icon: <Presentation className="h-10 w-10 text-green-600" />,
-      fileType: "PPTX",
-      fileSize: "18.7 MB",
-      link: "#"
-    },
-    {
-      title: "Dataset Information",
-      description: "Details about the dataset collection and preprocessing methodology",
-      icon: <Database className="h-10 w-10 text-green-600" />,
-      fileType: "PDF",
-      fileSize: "1.2 MB",
-      link: "#"
-    },
-    {
-      title: "Research Poster",
-      description: "High-resolution poster presented at ICML 2024",
+      title: "Pest Management Manual",
+      description: "Detailed manual for managing papaya pests and insects",
       icon: <FileText className="h-10 w-10 text-green-600" />,
       fileType: "PDF",
-      fileSize: "5.8 MB",
-      link: "#"
+      fileSize: "3.8 MB",
+      link: "/downloads/pest-management-manual.pdf"
+    },
+    {
+      title: "Harvesting Guide",
+      description: "Complete guide to papaya harvesting and post-harvest handling",
+      icon: <FileText className="h-10 w-10 text-green-600" />,
+      fileType: "PDF",
+      fileSize: "2.9 MB",
+      link: "/downloads/harvesting-guide.pdf"
+    },
+    {
+      title: "Growing Best Practices",
+      description: "Best practices for papaya cultivation and maintenance",
+      icon: <FileText className="h-10 w-10 text-green-600" />,
+      fileType: "PDF",
+      fileSize: "5.1 MB",
+      link: "/downloads/growing-best-practices.pdf"
     }
   ];
 

@@ -54,65 +54,67 @@ const FutureWork: React.FC = () => {
   ];
 
   return (
-    <section id="future" className="py-20 bg-gradient-to-br from-green-50 to-yellow-50">
-      <div className="container mx-auto px-6">
+    <section id="future" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-green-50 to-yellow-50">
+      <div className="container mx-auto px-4 sm:px-6">
         <SectionTitle 
           title="Commercialization & Future Work" 
           subtitle="Expanding Impact and Research Directions"
         />
         
-        <div className="mt-16 grid lg:grid-cols-2 gap-12">
+        <div className="mt-8 sm:mt-12 md:mt-16 grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
           <div>
-            <h3 className="text-2xl font-bold text-green-800 mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-green-800 mb-4 sm:mb-6">
               Commercialization Roadmap
             </h3>
             
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-green-50">
-                  <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
-                      Phase
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
-                      Timeline
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
-                      Status
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {commercializationSteps.map((step, index) => (
-                    <tr key={index}>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="text-sm font-medium text-gray-900">{step.title}</div>
-                        <div className="text-sm text-gray-500">{step.description}</div>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <span className="text-sm text-gray-900">{step.timeline}</span>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <span className="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                          {step.status}
-                        </span>
-                      </td>
+              <div className="overflow-x-auto">
+                <table className="min-w-full divide-y divide-gray-200">
+                  <thead className="bg-green-50">
+                    <tr>
+                      <th className="px-3 sm:px-6 py-2 sm:py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
+                        Phase
+                      </th>
+                      <th className="px-3 sm:px-6 py-2 sm:py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
+                        Timeline
+                      </th>
+                      <th className="px-3 sm:px-6 py-2 sm:py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
+                        Status
+                      </th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    {commercializationSteps.map((step, index) => (
+                      <tr key={index}>
+                        <td className="px-3 sm:px-6 py-3 sm:py-4">
+                          <div className="text-xs sm:text-sm font-medium text-gray-900">{step.title}</div>
+                          <div className="text-xs sm:text-sm text-gray-500 mt-1">{step.description}</div>
+                        </td>
+                        <td className="px-3 sm:px-6 py-3 sm:py-4 whitespace-nowrap">
+                          <span className="text-xs sm:text-sm text-gray-900">{step.timeline}</span>
+                        </td>
+                        <td className="px-3 sm:px-6 py-3 sm:py-4 whitespace-nowrap">
+                          <span className="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                            {step.status}
+                          </span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
             
-            <div className="mt-10 bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-bold text-green-800 mb-4">
+            <div className="mt-6 sm:mt-8 md:mt-10 bg-white p-4 sm:p-6 rounded-lg shadow-md">
+              <h4 className="text-lg sm:text-xl font-bold text-green-800 mb-3 sm:mb-4">
                 Commercial Impact Potential
               </h4>
               
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 h-5 w-5 rounded-full bg-green-500 mt-1"></div>
-                  <div className="ml-4">
-                    <p className="text-gray-700">
+                  <div className="flex-shrink-0 h-4 w-4 sm:h-5 sm:w-5 rounded-full bg-green-500 mt-1"></div>
+                  <div className="ml-3 sm:ml-4">
+                    <p className="text-sm sm:text-base text-gray-700">
                       <strong>Economic Benefits:</strong> Potential to increase papaya production value by 
                       approximately 200-300 million LKR annually through reduced losses and improved yields.
                     </p>
@@ -120,9 +122,9 @@ const FutureWork: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 h-5 w-5 rounded-full bg-green-500 mt-1"></div>
-                  <div className="ml-4">
-                    <p className="text-gray-700">
+                  <div className="flex-shrink-0 h-4 w-4 sm:h-5 sm:w-5 rounded-full bg-green-500 mt-1"></div>
+                  <div className="ml-3 sm:ml-4">
+                    <p className="text-sm sm:text-base text-gray-700">
                       <strong>Environmental Impact:</strong> Targeted interventions could reduce pesticide 
                       usage by up to 40%, decreasing environmental contamination and promoting sustainable 
                       farming practices.
@@ -131,9 +133,9 @@ const FutureWork: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 h-5 w-5 rounded-full bg-green-500 mt-1"></div>
-                  <div className="ml-4">
-                    <p className="text-gray-700">
+                  <div className="flex-shrink-0 h-4 w-4 sm:h-5 sm:w-5 rounded-full bg-green-500 mt-1"></div>
+                  <div className="ml-3 sm:ml-4">
+                    <p className="text-sm sm:text-base text-gray-700">
                       <strong>Food Security:</strong> Improving disease management in a key food crop 
                       contributes directly to Sri Lanka's food security objectives and helps stabilize 
                       market prices for consumers.
@@ -145,56 +147,56 @@ const FutureWork: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-2xl font-bold text-green-800 mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-green-800 mb-4 sm:mb-6">
               Future Research Directions
             </h3>
             
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {futureResearch.map((item, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div key={index} className="bg-white p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-start">
                     <div className="mt-1">{item.icon}</div>
-                    <div className="ml-4">
-                      <h4 className="font-bold text-gray-900">{item.title}</h4>
-                      <p className="text-gray-700 mt-1">{item.description}</p>
+                    <div className="ml-3 sm:ml-4">
+                      <h4 className="font-bold text-gray-900 text-sm sm:text-base">{item.title}</h4>
+                      <p className="text-gray-700 mt-1 text-xs sm:text-sm">{item.description}</p>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
             
-            <div className="mt-10 bg-yellow-100 p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-bold text-yellow-800 mb-4">
+            <div className="mt-6 sm:mt-8 md:mt-10 bg-yellow-100 p-4 sm:p-6 rounded-lg shadow-md">
+              <h4 className="text-lg sm:text-xl font-bold text-yellow-800 mb-3 sm:mb-4">
                 Challenges & Opportunities
               </h4>
               
-              <div className="space-y-4">
-                <p className="text-gray-800">
+              <div className="space-y-3 sm:space-y-4">
+                <p className="text-sm sm:text-base text-gray-800">
                   <strong>Technical Challenges:</strong> Maintaining model accuracy across diverse 
                   environmental conditions and papaya varieties remains a significant challenge. Future 
                   work will focus on continuous model improvement through active learning approaches.
                 </p>
                 
-                <p className="text-gray-800">
+                <p className="text-sm sm:text-base text-gray-800">
                   <strong>Adoption Barriers:</strong> Digital literacy among older farmers presents an 
                   adoption challenge. We're exploring simplified user interfaces and community-based 
                   training programs to address this barrier.
                 </p>
                 
-                <p className="text-gray-800">
+                <p className="text-sm sm:text-base text-gray-800">
                   <strong>Research Opportunities:</strong> The dataset collected during this project 
                   represents one of the largest labeled collections of tropical crop disease images, 
                   creating opportunities for broader research in agricultural AI applications for 
                   developing regions.
                 </p>
                 
-                <div className="mt-6 p-4 bg-white rounded-lg">
-                  <p className="text-green-800 font-medium text-center">
+                <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-white rounded-lg">
+                  <p className="text-sm sm:text-base text-green-800 font-medium text-center">
                     "PapayaBuddy represents a significant step toward democratizing advanced 
                     agricultural technology for smallholder farmers, with potential applications 
                     extending far beyond its current scope."
                   </p>
-                  <p className="text-right text-sm text-gray-600 mt-2">
+                  <p className="text-right text-xs sm:text-sm text-gray-600 mt-2">
                     — Dr. Kamal Perera, Agricultural Research Institute
                   </p>
                 </div>
