@@ -6,8 +6,8 @@ const Methodology: React.FC = () => {
   const architectures = [
     {
       name: "EfficientNet B3",
-      application: "Disease Classification",
-      description: "Leveraged for its excellent balance between accuracy and computational efficiency.",
+      application: "Binary Classification",
+      description: "Utilized for initial binary classification of healthy vs. diseased papaya images.",
       performance: "98.2% accuracy"
     },
     {

@@ -3,11 +3,11 @@ import { ChevronDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-green-800 to-green-600 text-white"
     >
-      <div 
+      <div
         className="absolute inset-0 bg-black opacity-40 z-0"
         style={{
           backgroundImage: `url('https://images.pexels.com/photos/5529599/pexels-photo-5529599.jpeg?auto=compress&cs=tinysrgb&w=1920')`,
@@ -23,11 +23,13 @@ const Hero: React.FC = () => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slideUp">
           <span className="block">PapayaBuddy</span>
           <span className="block text-xl md:text-2xl font-normal mt-3 text-yellow-300">
-            A Deep Learning-Based Mobile Application for Papaya Disease, Pest, and Maturity Identification
+            A DEEP LEARNING APPROACH FOR PAPAYA
+            DISEASE, PEST AND MATURITY IDENTIFICATION
+            VIA MOBILE IMAGING: A CASE STUDY
           </span>
         </h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 animate-slideUp animation-delay-200">
-          Enhancing Sri Lankan agriculture through machine learning and mobile technology, 
+          Enhancing Sri Lankan agriculture through machine learning and mobile technology,
           offering real-time detection and solutions for papaya cultivation challenges.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 animate-slideUp animation-delay-400">
