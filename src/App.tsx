@@ -26,7 +26,6 @@ function App() {
         <Solution />
         <Objectives />
         <Methodology />
-        <Achievements />
         <FutureWork />
         <Downloads />
         <Team />

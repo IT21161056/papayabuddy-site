@@ -1,6 +1,7 @@
 import React from 'react';
 import { Users, ExternalLink, GraduationCap, Leaf } from 'lucide-react';
 import SectionTitle from './common/SectionTitle';
+import vikum from '../assets/vikum.jpeg';
 
 const Team: React.FC = () => {
   const teamMembers = [
@@ -26,13 +27,12 @@ const Team: React.FC = () => {
       ]
     },
     {
-      name: "Rajith Fernando",
-      role: "Mobile Developer",
-      expertise: "Flutter, UI/UX Design",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Vikum Viraj",
+      role: "Undergraduate Researcher",
+      image: vikum,
       links: [
-        { platform: "LinkedIn", url: "#" },
-        { platform: "GitHub", url: "#" }
+        { platform: "LinkedIn", url: "https://www.linkedin.com/in/vikum-viraj/" },
+        { platform: "GitHub", url: "https://github.com/Vikum-Viraj" }
       ]
     },
     {

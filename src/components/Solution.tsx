@@ -5,31 +5,27 @@ import SectionTitle from './common/SectionTitle';
 const Solution: React.FC = () => {
   const problemSolutions = [
     {
-      title: "Disease Detection",
+      title: "Identification of cercospora and mosaic virus",
       problems: ["Cercospora Leaf Spot", "Papaya Mosaic Virus"],
-      description: "Our models can detect early symptoms of common fungal and viral diseases before they become visible to the naked eye, allowing for preventative treatment.",
-      accuracy: "98.3%",
+      description: "Papaya mosaic virus and Cercospora leaf spot are major diseases affecting papaya crops. Mosaic virus causes leaf mottling and stunted growth, while Cercospora leads to dark, spreading lesions on leaves, both reducing fruit yield.",
       icon: <ShieldCheck className="h-10 w-10 text-green-600" />
     },
     {
-      title: "Disease Classification",
+      title: "Identification and classification of papaya ring spot virus and powdery mildew",
       problems: ["Papaya Ring Spot Virus (PRSV)", "Powdery Mildew"],
-      description: "Advanced image classification algorithms identify specific disease types and severity levels, enabling targeted treatment protocols.",
-      accuracy: "99.1%",
+      description: "The proposed system uses a YOLOv5-based model for real-time detection of Papaya Ring Spot Virus (PRSV) and Powdery Mildew in papaya fruits, integrated with an automated remedy suggestion system. Designed for mobile application use, it aims to provide accurate detection and accessible treatment recommendations.",
       icon: <BrainCircuit className="h-10 w-10 text-green-600" />
     },
     {
-      title: "Pest Identification",
+      title: "Mite and Mealy Bug Identification",
       problems: ["Papaya Mites", "Mealy Bugs"],
-      description: "Real-time detection of common pests with precise localization and population density estimation to guide appropriate intervention strategies.",
-      accuracy: "96.7%",
+      description: "Papaya crops face serious threats from pest infestations such as Mite disease and Mealy Bug disease, which can cause significant yield losses. Mite infestation typically appears as leaf curling and distorted leaves, while Mealy Bugs resemble cotton-like clusters on the fruit. Early detection is critical for effective pest management, but identifying these infestations can be difficult for the untrained eye",
       icon: <ShieldCheck className="h-10 w-10 text-green-600" />
     },
     {
-      title: "Maturity Assessment",
+      title: "Papaya maturity level detection",
       problems: ["Suboptimal Harvesting", "Post-Harvest Losses"],
-      description: "Computer vision algorithms assess fruit maturity levels with precision, optimizing harvest timing for maximum yield and quality.",
-      accuracy: "97.9%",
+      description: "Deep learning methods for detecting the maturity level of papaya, a widely cultivated tropical fruit. Various classification and detection approaches are used in agricultural technology to address the unique challenges and opportunities in determining papaya ripeness",
       icon: <CloudCog className="h-10 w-10 text-green-600" />
     }
   ];
@@ -68,7 +64,7 @@ const Solution: React.FC = () => {
                     </div>
                     <p className="text-gray-600">{item.description}</p>
                     <p className="mt-2 text-green-700 font-medium">
-                      Detection Accuracy: {item.accuracy}
+                      
                     </p>
                   </div>
                 </div>
