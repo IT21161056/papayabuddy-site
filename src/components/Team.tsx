@@ -2,6 +2,7 @@ import React from 'react';
 import { Users, ExternalLink, GraduationCap, Leaf } from 'lucide-react';
 import SectionTitle from './common/SectionTitle';
 import vikum from '../assets/vikum.jpeg';
+import pasindu from '../assets/pasindu.jpg';
 
 const Team: React.FC = () => {
   const teamMembers = [
@@ -17,13 +18,12 @@ const Team: React.FC = () => {
       ]
     },
     {
-      name: "Anushka Silva",
-      role: "ML Engineer",
-      expertise: "Model Optimization, TensorFlow",
-      image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Pasindu Perakum",
+      role: "Undergraduate Researcher",
+      image: pasindu,
       links: [
-        { platform: "LinkedIn", url: "#" },
-        { platform: "GitHub", url: "#" }
+        { platform: "LinkedIn", url: "https://www.linkedin.com/in/pasindu-perakum-0162bb218/" },
+        { platform: "GitHub", url: "https://github.com/IT21160066" }
       ]
     },
     {
@@ -81,7 +81,7 @@ const Team: React.FC = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-                <div className="h-64 overflow-hidden">
+                <div className="h-72 overflow-hidden">
                   <img 
                     src={member.image} 
                     alt={member.name} 
