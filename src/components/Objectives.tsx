@@ -52,49 +52,49 @@ const Objectives: React.FC = () => {
   ];
 
   return (
-    <section id="objectives" className="py-20 bg-gradient-to-br from-green-50 to-green-100">
-      <div className="container mx-auto px-6">
+    <section id="objectives" className="py-12 sm:py-16 md:py-24 bg-gradient-to-br from-green-50 via-white to-green-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle 
           title="Research Objectives" 
           subtitle="Key Goals and Milestones"
         />
         
-        <div className="mt-16 flex flex-col items-center">
-          <div className="flex items-center justify-center space-x-3 mb-8">
-            <Target className="h-8 w-8 text-green-700" />
-            <h3 className="text-2xl font-bold text-green-800">
+        <div className="mt-12 sm:mt-16 md:mt-20 max-w-5xl mx-auto">
+          <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-8 sm:mb-12">
+            <Target className="h-8 w-8 sm:h-10 sm:w-10 text-green-600" />
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
               Primary Research Objective
             </h3>
           </div>
           
-          <div className="bg-white p-6 rounded-lg shadow-md mb-16 max-w-4xl text-center">
-            <p className="text-xl text-green-900 font-medium leading-relaxed">
+          <div className="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 mb-12 sm:mb-16 md:mb-20 text-center">
+            <p className="text-base sm:text-lg md:text-xl text-gray-800 font-medium leading-relaxed">
               To develop an accessible, comprehensive mobile solution that enables Sri Lankan papaya farmers 
               to accurately identify diseases, pests, and maturity levels using deep learning technologies, 
               and receive contextually relevant treatment recommendations to improve crop yields and reduce losses.
             </p>
           </div>
           
-          <h3 className="text-2xl font-bold text-green-800 mb-8 flex items-center">
-            <CheckCircle className="mr-2 text-yellow-500" />
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 flex items-center justify-center">
+            <CheckCircle className="mr-2 sm:mr-3 h-6 w-6 sm:h-8 sm:w-8 text-green-600" />
             Specific Objectives
           </h3>
           
-          <div className="space-y-8 w-full">
+          <div className="grid gap-4 sm:gap-6 md:gap-8">
             {mainObjectives.map((objective, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-sm overflow-hidden">
-                <div className="bg-green-700 py-3 px-6">
-                  <h4 className="text-white font-bold">{objective.title}</h4>
+              <div key={index} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-200">
+                <div className="bg-gradient-to-r from-green-600 to-green-700 py-3 sm:py-4 px-4 sm:px-8">
+                  <h4 className="text-white font-bold text-base sm:text-lg">{objective.title}</h4>
                 </div>
-                <div className="p-6">
-                  <p className="text-gray-700 mb-6">{objective.description}</p>
+                <div className="p-4 sm:p-6 md:p-8">
+                  <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">{objective.description}</p>
                   
-                  <h5 className="font-medium text-green-800 mb-3">Sub-objectives:</h5>
-                  <ul className="space-y-2">
+                  <h5 className="font-semibold text-gray-900 mb-3 sm:mb-4 text-sm sm:text-base">Sub-objectives:</h5>
+                  <ul className="space-y-2 sm:space-y-3">
                     {objective.subObjectives.map((sub, sIndex) => (
                       <li key={sIndex} className="flex items-start">
-                        <span className="text-yellow-500 mr-2">•</span>
-                        <span className="text-gray-600">{sub}</span>
+                        <span className="text-green-600 mr-2 sm:mr-3 mt-1">•</span>
+                        <span className="text-sm sm:text-base text-gray-600 leading-relaxed">{sub}</span>
                       </li>
                     ))}
                   </ul>
@@ -103,33 +103,33 @@ const Objectives: React.FC = () => {
             ))}
           </div>
           
-          <div className="mt-16 bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 max-w-4xl">
-            <h4 className="font-bold text-lg text-gray-900 mb-3">Success Criteria</h4>
-            <p className="text-gray-700">
+          <div className="mt-12 sm:mt-16 md:mt-20 bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100">
+            <h4 className="font-bold text-lg sm:text-xl text-gray-900 mb-3 sm:mb-4">Success Criteria</h4>
+            <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">
               The project will be considered successful upon meeting the following criteria:
             </p>
-            <ul className="mt-3 space-y-2">
-              <li className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-600 mr-2" />
-                <span className="text-gray-700">
+            <ul className="space-y-3 sm:space-y-4">
+              <li className="flex items-start">
+                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-green-600 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" />
+                <span className="text-sm sm:text-base text-gray-700 leading-relaxed">
                   Detection models achieve ≥95% accuracy in field conditions (not just laboratory settings)
                 </span>
               </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-600 mr-2" />
-                <span className="text-gray-700">
+              <li className="flex items-start">
+                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-green-600 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" />
+                <span className="text-sm sm:text-base text-gray-700 leading-relaxed">
                   Mobile application successfully deployed with compatibility for devices running Android 6.0+ (covering 94% of Sri Lankan farmer smartphones)
                 </span>
               </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-600 mr-2" />
-                <span className="text-gray-700">
+              <li className="flex items-start">
+                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-green-600 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" />
+                <span className="text-sm sm:text-base text-gray-700 leading-relaxed">
                   Field testing with at least 50 farmers demonstrates significant improvement in early disease detection rates
                 </span>
               </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-600 mr-2" />
-                <span className="text-gray-700">
+              <li className="flex items-start">
+                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-green-600 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" />
+                <span className="text-sm sm:text-base text-gray-700 leading-relaxed">
                   Remedy recommendation engine provides appropriate solutions in ≥90% of test cases
                 </span>
               </li>

@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Georgia', 'serif'],
+        sans: ['Inter var', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        serif: ['Playfair Display', 'Georgia', 'serif'],
       },
       colors: {
         green: {
@@ -36,6 +36,7 @@ export default {
       animation: {
         fadeIn: 'fadeIn 1s ease-in-out',
         slideUp: 'slideUp 0.8s ease-out',
+        scroll: 'scroll 40s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -45,6 +46,10 @@ export default {
         slideUp: {
           '0%': { transform: 'translateY(30px)', opacity: 0 },
           '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
     },
