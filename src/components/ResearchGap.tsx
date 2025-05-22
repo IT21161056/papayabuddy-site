@@ -73,7 +73,7 @@ const ResearchGap: React.FC = () => {
         
         <div className="mt-16 bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
           <h3 className="text-xl font-bold text-green-800 mb-4">
-            Justification for a Mobile-First, ML-Powered Integrated Approach
+            Justification for a Mobile-First, AI Integrated Approach
           </h3>
           <div className="space-y-4">
             <p className="text-gray-700">

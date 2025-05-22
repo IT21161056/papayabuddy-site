@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       id="home" 
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-green-800 to-green-600 text-white overflow-hidden"
     >
-      <div 
+      <div
         className="absolute inset-0 bg-black opacity-40 z-0"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1920')`,
@@ -54,7 +54,6 @@ const Hero: React.FC = () => {
         {/* Dynamic Image Grid */}
         <div className="hidden lg:block w-1/2 relative">
           <div className="relative h-[900px]">
-            {/* Large featured image */}
             <div className="absolute top-0 right-[-50px] w-[450px] h-[550px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:rotate-1 transition-all duration-500 z-[2]">
               <img 
                 src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
@@ -62,8 +61,6 @@ const Hero: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            
-            {/* Small square image */}
             <div className="absolute top-[150px] left-[-40px] w-[280px] h-[280px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:-rotate-2 transition-all duration-500 z-[1]">
               <img 
                 src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
@@ -71,8 +68,6 @@ const Hero: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Medium vertical image */}
             <div className="absolute bottom-[120px] left-[60px] w-[220px] h-[450px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:rotate-2 transition-all duration-500 z-[3]">
               <img 
                 src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
@@ -80,8 +75,6 @@ const Hero: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Small square image */}
             <div className="absolute top-[500px] right-[80px] w-[200px] h-[200px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:-rotate-1 transition-all duration-500 z-[2]">
               <img 
                 src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
@@ -89,8 +82,6 @@ const Hero: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Wide horizontal image */}
             <div className="absolute bottom-[60px] right-[140px] w-[320px] h-[220px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:rotate-1 transition-all duration-500 z-[1]">
               <img 
                 src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
@@ -98,8 +89,6 @@ const Hero: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Additional small image */}
             <div className="absolute top-[350px] left-[160px] w-[160px] h-[160px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:-rotate-2 transition-all duration-500 z-[4]">
               <img 
                 src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
@@ -107,8 +96,6 @@ const Hero: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Additional medium image */}
             <div className="absolute top-[250px] right-[200px] w-[180px] h-[280px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:rotate-1 transition-all duration-500 z-[3]">
               <img 
                 src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 

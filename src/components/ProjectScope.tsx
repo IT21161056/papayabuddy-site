@@ -51,7 +51,7 @@ const ProjectScope: React.FC = () => {
           
           <div className="relative h-80 md:h-full overflow-hidden rounded-xl shadow-lg">
             <img 
-              src="https://images.pexels.com/photos/2316571/pexels-photo-2316571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              src="https://images-cdn.ubuy.co.in/63fd5eb98af6bb0cf050bc03-maradol-papaya-tree-seeds-delicious.jpg" 
               alt="Papaya farming in Sri Lanka" 
               className="w-full h-full object-cover"
             />
