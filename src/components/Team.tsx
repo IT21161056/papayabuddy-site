@@ -3,17 +3,17 @@ import { Users, ExternalLink, GraduationCap, Leaf } from 'lucide-react';
 import SectionTitle from './common/SectionTitle';
 import vikum from '../assets/vikum.jpeg';
 import pasindu from '../assets/pasindu.jpg';
+import hansi from '../assets/hansi.jpg';
+import thilini from '../assets/thilini.jpeg';
 
 const Team: React.FC = () => {
   const teamMembers = [
     {
-      name: "Kamal Perera",
-      role: "Lead Researcher",
-      expertise: "Computer Vision, Deep Learning",
-      image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Anoj Peiris",
+      role: "Undergraduate Researcher",
+      image: "",
       links: [
         { platform: "LinkedIn", url: "#" },
-        { platform: "ResearchGate", url: "#" },
         { platform: "GitHub", url: "#" }
       ]
     },
@@ -36,10 +36,9 @@ const Team: React.FC = () => {
       ]
     },
     {
-      name: "Dilini Jayawardena",
-      role: "Agriculture Expert",
-      expertise: "Plant Pathology, Crop Management",
-      image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Harini Seneviratne",
+      role: "Undergraduate Researcher",
+      image: "",
       links: [
         { platform: "LinkedIn", url: "#" },
         { platform: "ResearchGate", url: "#" }
@@ -49,18 +48,24 @@ const Team: React.FC = () => {
 
   const supervisors = [
     {
-      name: "Dr. Pradeep Weerasinghe",
+      name: "Ms. Hansi De Silva",
       title: "Research Supervisor",
-      department: "Faculty of Computing, SLIIT",
-      expertise: "Artificial Intelligence, Machine Learning",
-      image: "https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      department: "Lecturer, Faculty of Computing | Software Engineering",
+      expertise: "Natural Language Processing, Machine Learning",
+      image: hansi
     },
     {
-      name: "Dr. Samanthi Bandara",
+      name: "Ms. Thilini Jayalath",
       title: "Co-Supervisor",
-      department: "Department of Agriculture",
-      expertise: "Plant Diseases, Tropical Agriculture",
-      image: "https://images.pexels.com/photos/7642000/pexels-photo-7642000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      department: "Senior Lecturer, Senior LecturerFaculty of Computing | Software Engineering",
+      expertise: "Software Engineering Complexity Metrics, Machine Learning",
+      image: thilini
+    },
+    {
+      name: "Ms M. Kuruppu",
+      title: "External Supervisor",
+      department: "Fruit Research and Development Institute, Kananwila, Horana",
+      expertise: "Agricultural Research, Crop Management",
     }
   ];
 
@@ -84,14 +89,13 @@ const Team: React.FC = () => {
                 <div className="h-72 overflow-hidden">
                   <img 
                     src={member.image} 
-                    alt={member.name} 
+                    alt=""
                     className="w-full h-full object-cover transition-transform hover:scale-110"
                   />
                 </div>
                 <div className="p-6">
                   <h4 className="font-bold text-xl text-gray-900">{member.name}</h4>
                   <p className="text-green-700 font-medium text-sm mb-2">{member.role}</p>
-                  <p className="text-gray-600 text-sm mb-4">{member.expertise}</p>
                   
                   <div className="flex space-x-2">
                     {member.links.map((link, lIndex) => (
@@ -121,7 +125,7 @@ const Team: React.FC = () => {
                 <div className="w-1/3">
                   <img 
                     src={supervisor.image} 
-                    alt={supervisor.name} 
+                    alt="" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -159,14 +163,7 @@ const Team: React.FC = () => {
                 <div className="h-24 w-24 bg-white p-4 rounded-full shadow-sm mx-auto flex items-center justify-center">
                   <Leaf className="h-12 w-12 text-green-600" />
                 </div>
-                <p className="mt-2 text-sm text-gray-600">Department of Agriculture</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="h-24 w-24 bg-white p-4 rounded-full shadow-sm mx-auto flex items-center justify-center">
-                  <div className="font-bold text-green-800 text-2xl">NSF</div>
-                </div>
-                <p className="mt-2 text-sm text-gray-600">National Science Foundation</p>
+                <p className="mt-2 text-sm text-gray-600">Fruit Research and Development Institute, Kananwila, Horana</p>
               </div>
             </div>
           </div>

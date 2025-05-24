@@ -53,41 +53,9 @@ const Downloads: React.FC = () => {
               Available Resources
             </h3>
             
-            <div className="grid md:grid-cols-2 gap-6">
-              {resources.map((resource, index) => (
-                <div 
-                  key={index} 
-                  className="bg-gray-50 rounded-lg overflow-hidden border border-gray-200 transition-all hover:shadow-md"
-                >
-                  <div className="p-6 flex items-center">
-                    <div className="flex-shrink-0">
-                      {resource.icon}
-                    </div>
-                    <div className="ml-4">
-                      <h4 className="font-bold text-gray-900">{resource.title}</h4>
-                      <p className="text-sm text-gray-600 mt-1">{resource.description}</p>
-                      <div className="flex items-center mt-2 text-xs text-gray-500">
-                        <span className="bg-green-100 text-green-800 px-2 py-1 rounded font-medium mr-2">
-                          {resource.fileType}
-                        </span>
-                        <span>{resource.fileSize}</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="border-t border-gray-200">
-                    <a
-                      href={resource.link}
-                      className="block p-3 text-center text-green-700 hover:text-green-800 hover:bg-green-50 transition-colors font-medium"
-                    >
-                      <span className="flex items-center justify-center">
-                        <FileDown className="h-4 w-4 mr-2" />
-                        Download
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <a href='https://drive.google.com/drive/u/2/folders/1CBjoVimDPPi_X4175uJX0w4_fmh3wKIc'>
+            Research Resources
+            </a>
             
             <div className="mt-10 bg-yellow-50 p-5 rounded-lg">
               <h4 className="font-bold text-gray-900 mb-2">Access Information</h4>
