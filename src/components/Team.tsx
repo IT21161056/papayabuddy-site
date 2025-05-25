@@ -5,13 +5,14 @@ import vikum from '../assets/vikum.jpeg';
 import pasindu from '../assets/pasindu.jpg';
 import hansi from '../assets/hansi.jpg';
 import thilini from '../assets/thilini.jpeg';
+import anoj from '../assets/anoj.jpg';
 
 const Team: React.FC = () => {
   const teamMembers = [
     {
       name: "Anoj Peiris",
       role: "Undergraduate Researcher",
-      image: "",
+      image: anoj,
       links: [
         { platform: "LinkedIn", url: "#" },
         { platform: "GitHub", url: "#" }
