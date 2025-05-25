@@ -44,12 +44,12 @@ const Methodology: React.FC = () => {
     {
       title: "Data Collection",
       description:
-        "Over 15,000 papaya images were collected across various regions of Sri Lanka, representing different varieties, growing conditions, and disease stages.",
+        "Papaya images were collected across various regions of Sri Lanka, representing different varieties, growing conditions, and disease stages.",
     },
     {
       title: "Annotation",
       description:
-        "Expert agricultural scientists from the University of Peradeniya manually annotated images to create a high-quality labeled dataset.",
+        "Manually annotated images to create a high-quality labeled dataset.",
     },
     {
       title: "Augmentation",
@@ -59,7 +59,7 @@ const Methodology: React.FC = () => {
     {
       title: "Validation",
       description:
-        "Used 5-fold cross-validation to ensure model generalizability across different farm environments and conditions.",
+        "Used cross-validation to ensure model generalizability across different farm environments and conditions.",
     },
   ];
 
@@ -246,9 +246,9 @@ const Methodology: React.FC = () => {
               <p className="text-gray-700 text-xs sm:text-sm">
                 The mobile application is built using Flutter for cross-platform
                 deployment, with TensorFlow Lite for on-device inference.
-                Backend services are deployed on Azure, using MongoDB for data
-                storage and retrieval. Weather API integration provides
-                contextual information for treatment recommendations.
+                Backend services developed using Python and Node js and MongoDB
+                used for data storage and retrieval. Weather API integration
+                provides contextual information for treatment recommendations.
               </p>
             </div>
           </div>
