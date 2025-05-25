@@ -48,8 +48,8 @@ const Team: React.FC = () => {
       role: "Undergraduate Researcher",
       image: harini,
       links: [
-        { platform: "LinkedIn", url: "#" },
-        { platform: "ResearchGate", url: "#" },
+        { platform: "LinkedIn", url: "https://www.linkedin.com/in/harini-senevirathne-4a7ba0247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+        { platform: "GitHub", url: "https://github.com/IT21386022" },
       ],
     },
   ];
