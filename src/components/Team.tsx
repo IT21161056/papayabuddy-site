@@ -6,6 +6,7 @@ import pasindu from '../assets/pasindu.jpg';
 import hansi from '../assets/hansi.jpg';
 import thilini from '../assets/thilini.jpeg';
 import anoj from '../assets/anoj.jpg';
+import harini from '../assets/harini.jpeg';
 
 const Team: React.FC = () => {
   const teamMembers = [
@@ -39,7 +40,7 @@ const Team: React.FC = () => {
     {
       name: "Harini Seneviratne",
       role: "Undergraduate Researcher",
-      image: "",
+      image: harini,
       links: [
         { platform: "LinkedIn", url: "#" },
         { platform: "ResearchGate", url: "#" }
