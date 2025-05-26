@@ -36,7 +36,7 @@ const Methodology: React.FC = () => {
       name: "MobileNetV3",
       application: "Fruit maturity detection",
       description: "Optimized for mobile deployment with minimal latency.",
-      performance: "99% accuracy",
+      performance: "99.90% accuracy",
     },
   ];
 
