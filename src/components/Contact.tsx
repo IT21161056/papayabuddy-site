@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Mail, Send, MessageSquare, ExternalLink } from 'lucide-react';
 import SectionTitle from './common/SectionTitle';
+import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -15,20 +19,72 @@ const Contact: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real implementation, this would send the form data to a server
-    alert('Thank you for your message. We will get back to you soon!');
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+    setIsSubmitting(true);
+
+    const toastId = toast.loading('Sending your message...', {
+      style: {
+        background: '#059669',
+        color: '#fff',
+        padding: '16px',
+        borderRadius: '8px',
+      },
     });
+
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      };
+
+      await emailjs.send(
+        'service_apthgpf',
+        'template_ccnzylz',
+        templateParams,
+        '5XyyFydxVQmPQC57Y'
+      );
+
+      toast.success('Message sent successfully! We will get back to you soon.', {
+        id: toastId,
+        duration: 5000,
+        style: {
+          background: '#059669',
+          color: '#fff',
+          padding: '16px',
+          borderRadius: '8px',
+        },
+        icon: '🎉',
+      });
+
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast.error('Failed to send message. Please try again later.', {
+        id: toastId,
+        duration: 5000,
+        style: {
+          background: '#DC2626',
+          color: '#fff',
+          padding: '16px',
+          borderRadius: '8px',
+        },
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <section id="contact" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-green-800 to-green-700 text-white">
+      <Toaster position="top-center" />
       <div className="container mx-auto px-4 sm:px-6">
         <SectionTitle 
           title="Contact Us" 
@@ -43,7 +99,7 @@ const Contact: React.FC = () => {
               Send a Message
             </h3>
             
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div>
                 <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
                   Your Name
@@ -111,10 +167,23 @@ const Contact: React.FC = () => {
               
               <button
                 type="submit"
-                className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 bg-green-600 text-white text-sm sm:text-base font-medium rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-300 flex items-center justify-center"
+                disabled={isSubmitting}
+                className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 bg-green-600 text-white text-sm sm:text-base font-medium rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-300 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <Send className="mr-2 h-4 w-4" />
-                Send Message
+                {isSubmitting ? (
+                  <>
+                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send className="mr-2 h-4 w-4" />
+                    Send Message
+                  </>
+                )}
               </button>
             </form>
           </div>
