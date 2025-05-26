@@ -1,5 +1,11 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
+import splash_screen from '../assets/splash_screen.jpeg';
+import picture4 from '../assets/picture4.jpg';
+import maxresdefault from '../assets/maxresdefault.jpg';
+import papaya from '../assets/papaya.jpg';
+import papaya1 from '../assets/papaya1.jpg';
+import leaf1 from '../assets/leaf1.jpeg';
 
 const Hero: React.FC = () => {
   return (
@@ -56,49 +62,49 @@ const Hero: React.FC = () => {
           <div className="relative h-[600px] xl:h-[700px]">
             <div className="absolute top-0 right-[-30px] w-[400px] h-[500px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:rotate-1 transition-all duration-500 z-[2]">
               <img 
-                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
+                src={maxresdefault} 
                 alt="Papaya Plant" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute top-[120px] left-[-30px] w-[250px] h-[250px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:-rotate-2 transition-all duration-500 z-[1]">
               <img 
-                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
+                src={maxresdefault}
                 alt="Papaya Fruit" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute bottom-[100px] left-[40px] w-[200px] h-[400px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:rotate-2 transition-all duration-500 z-[3]">
               <img 
-                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
+              src={papaya1}
                 alt="Agriculture" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute top-[400px] right-[60px] w-[180px] h-[180px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:-rotate-1 transition-all duration-500 z-[2]">
               <img 
-                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
+                src={papaya}
                 alt="Technology" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute bottom-[40px] right-[120px] w-[280px] h-[200px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:rotate-1 transition-all duration-500 z-[1]">
               <img 
-                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
+                src={maxresdefault}
                 alt="Mobile App" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute top-[280px] left-[120px] w-[140px] h-[140px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:-rotate-2 transition-all duration-500 z-[4]">
               <img 
-                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
+                src={papaya}
                 alt="Research" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute top-[200px] right-[160px] w-[160px] h-[240px] rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:rotate-1 transition-all duration-500 z-[3]">
               <img 
-                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800" 
+                src={leaf1}
                 alt="Innovation" 
                 className="w-full h-full object-cover"
               />

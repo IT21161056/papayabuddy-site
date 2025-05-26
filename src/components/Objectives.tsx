@@ -20,8 +20,8 @@ const Objectives: React.FC = () => {
         "Build specialized object detection models to recognize and locate papaya pests with precise localization capabilities.",
       subObjectives: [
         "Adapt Densenet model to mite and mealy detection on mobile devices",
-        "Implement instance segmentation for mealy bug population density estimation",
-        "Develop pest lifecycle stage recognition for targeted treatment timing",
+        "Implement augmentation techniques to improve model performance",
+        "Develop a user-friendly mobile interface for pest identification",
       ],
     },
     {
@@ -50,7 +50,7 @@ const Objectives: React.FC = () => {
         "Develop a user-friendly mobile interface that makes advanced technology accessible to farmers with varied technical literacy.",
       subObjectives: [
         "Create intuitive UI/UX design with minimal text input requirements",
-        "Implement bilingual support for Sinhala and Tamil languages",
+        "Support for English language",
         "Develop offline functionality for use in areas with limited connectivity",
       ],
     },
@@ -151,7 +151,7 @@ const Objectives: React.FC = () => {
               <li className="flex items-start">
                 <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-green-600 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" />
                 <span className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  Field testing with at least 50 farmers demonstrates
+                  Field testing with farmers demonstrates
                   significant improvement in early disease detection rates
                 </span>
               </li>

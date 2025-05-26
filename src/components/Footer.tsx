@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-bold mb-4 text-yellow-300">Acknowledgements</h4>
             <p className="text-green-100 text-sm">
-              This research was supported by grants from the National Science Foundation of Sri Lanka 
+              This research was supported by grants from the Fruit Research and Development Institute 
               and technical assistance from the Department of Agriculture. Special thanks to the 
               farmers who participated in field testing.
             </p>

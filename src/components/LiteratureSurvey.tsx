@@ -46,15 +46,15 @@ const LiteratureSurvey: React.FC = () => {
           subtitle="Research Foundation and Key References"
         />
         
-        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
+        <div className="mt-16 max-w-4xl mx-auto">
           <div>
-            <h3 className="text-xl lg:text-2xl font-bold text-green-800 mb-4 lg:mb-6 flex items-center">
+            <h3 className="text-xl lg:text-2xl font-bold text-green-800 mb-4 lg:mb-6 flex items-center justify-center">
               <Book className="mr-2 text-yellow-500" />
               Key Research Methods
             </h3>
             
             <div className="space-y-4 lg:space-y-6">
-              <div className="bg-gray-50 p-4 lg:p-6 rounded-lg">
+              <div className="bg-gray-50 p-4 lg:p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <h4 className="font-bold text-base lg:text-lg text-gray-900 mb-2 lg:mb-3">Convolutional Neural Networks (CNNs)</h4>
                 <p className="text-sm lg:text-base text-gray-700">
                   CNNs have demonstrated exceptional performance in image classification tasks for plant
@@ -63,7 +63,7 @@ const LiteratureSurvey: React.FC = () => {
                 </p>
               </div>
               
-              <div className="bg-gray-50 p-4 lg:p-6 rounded-lg">
+              <div className="bg-gray-50 p-4 lg:p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <h4 className="font-bold text-base lg:text-lg text-gray-900 mb-2 lg:mb-3">EfficientNet & Vision Transformers</h4>
                 <p className="text-sm lg:text-base text-gray-700">
                   Recent advancements in computer vision have introduced more efficient architectures
@@ -72,7 +72,7 @@ const LiteratureSurvey: React.FC = () => {
                 </p>
               </div>
               
-              <div className="bg-gray-50 p-4 lg:p-6 rounded-lg">
+              <div className="bg-gray-50 p-4 lg:p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <h4 className="font-bold text-base lg:text-lg text-gray-900 mb-2 lg:mb-3">YOLO-based Object Detection</h4>
                 <p className="text-sm lg:text-base text-gray-700">
                   For pest identification, YOLO (You Only Look Once) models have proven effective
@@ -81,7 +81,7 @@ const LiteratureSurvey: React.FC = () => {
                 </p>
               </div>
               
-              <div className="bg-gray-50 p-4 lg:p-6 rounded-lg">
+              <div className="bg-gray-50 p-4 lg:p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <h4 className="font-bold text-base lg:text-lg text-gray-900 mb-2 lg:mb-3">Transfer Learning Approaches</h4>
                 <p className="text-sm lg:text-base text-gray-700">
                   Leveraging pre-trained models on large datasets and fine-tuning them for specific
@@ -89,67 +89,6 @@ const LiteratureSurvey: React.FC = () => {
                   availability for tropical crop diseases.
                 </p>
               </div>
-            </div>
-          </div>
-          
-          <div>
-            <h3 className="text-xl lg:text-2xl font-bold text-green-800 mb-4 lg:mb-6 flex items-center">
-              <GraduationCap className="mr-2 text-yellow-500" />
-              Influential Research
-            </h3>
-            
-            <div className="overflow-x-auto">
-              <div className="min-w-full shadow-sm border border-gray-200 rounded-lg">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-green-50">
-                    <tr>
-                      <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
-                        Paper
-                      </th>
-                      <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
-                        Method
-                      </th>
-                      <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
-                        Accuracy
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
-                    {researchPapers.map((paper, index) => (
-                      <tr key={index} className="hover:bg-gray-50">
-                        <td className="px-4 lg:px-6 py-3 lg:py-4">
-                          <div className="text-sm font-medium text-gray-900">{paper.title}</div>
-                          <div className="text-xs lg:text-sm text-gray-500">{paper.authors}, {paper.year}</div>
-                        </td>
-                        <td className="px-4 lg:px-6 py-3 lg:py-4">
-                          <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                            {paper.methodology}
-                          </span>
-                        </td>
-                        <td className="px-4 lg:px-6 py-3 lg:py-4 text-sm text-gray-900">
-                          {paper.accuracy}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            
-            <div className="mt-6 lg:mt-8 bg-yellow-50 p-4 lg:p-6 rounded-lg border-l-4 border-yellow-500">
-              <h4 className="font-bold text-base lg:text-lg text-gray-900 mb-2 lg:mb-3">Importance of AI in Precision Farming</h4>
-              <p className="text-sm lg:text-base text-gray-700">
-                The literature consistently highlights the transformative potential of AI-driven
-                solutions in agricultural contexts, particularly for smallholder farmers in developing
-                regions. By integrating computer vision with expert knowledge, systems can provide
-                actionable insights that were previously available only through specialized agricultural
-                extension services.
-              </p>
-              <p className="mt-2 lg:mt-3 text-sm lg:text-base text-gray-700">
-                PapayaBuddy builds upon this foundation by creating a comprehensive system that not
-                only detects problems but also provides context-aware solutions tailored to Sri Lankan
-                growing conditions.
-              </p>
             </div>
           </div>
         </div>

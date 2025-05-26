@@ -198,13 +198,13 @@ const Contact: React.FC = () => {
               <div className="space-y-3 sm:space-y-4">
                 <div>
                   <p className="font-medium text-sm sm:text-base">Email</p>
-                  <a href="mailto:papayabuddy@research.sliit.lk" className="text-yellow-200 hover:text-white text-sm sm:text-base">
-                    papayabuddy@research.sliit.lk
+                  <a href="mailto:seprojectgroup123@gmail.com" className="text-yellow-200 hover:text-white text-sm sm:text-base">
+                    seprojectgroup123@gmail.com
                   </a>
                 </div>
                 
                 <div>
-                  <p className="font-medium text-sm sm:text-base">Research Department</p>
+                  <p className="font-medium text-sm sm:text-base">Software Engineering Department</p>
                   <p className="text-sm sm:text-base">Faculty of Computing</p>
                   <p className="text-sm sm:text-base">Sri Lanka Institute of Information Technology</p>
                   <p className="text-sm sm:text-base">Malabe, Sri Lanka</p>
